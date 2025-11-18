@@ -1,0 +1,104 @@
+        
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        .nav{
+            background-color:lightgrey;
+            width:100%;
+            min-height: 20px;
+            line-height:20px;
+            position:fixed;
+            border: 2px black solid;
+            justify-content: center;
+            text-align: center;
+            margin-bottom:10px;
+            display: flex;
+            justify-content: space-between;
+            font-family:Arial, Helvetica, sans-serif;
+            
+        } 
+        
+        a:hover{
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+ 
+
+        .logo{
+            flex:1;
+            background-color:lightgrey;
+            width:100%;
+            min-height: 50px;
+            line-height:50px;
+            
+            display: flex;
+            justify-content: left;
+        }
+        
+        .insight{
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            width:100%;
+            min-height:80px;
+            line-height:80px;
+            margin-bottom:10px;
+            text-align: center;
+        }
+        .product{
+            width:100%;
+           
+           
+            margin-bottom:10px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .block{
+            
+            border:2px black solid ;
+            width:30%;
+             
+        }
+        .clearfix::after{
+            clear:both;
+            display:block;
+            content:"";
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: lightgreen;
+            min-height:50px;
+            line-height:50px;
+            width:100%;
+            font-size: small;
+            text-align: center;
+        }
+        .wrap{
+           
+            
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .image_text_overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
