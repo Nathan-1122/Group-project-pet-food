@@ -44,27 +44,34 @@
         </div>
             
         <div>
-            <form style="margin-top: 40px; margin-right: 70px;">
-            <input list="size">
-            <datalist id="size">
-              <option value="small">
-              <option value="medium">
-              <option value="large">
-              <option value="Highly-Digestable small">
-              <option value="Highly-Digestable large">
-            </datalist>
-            </form>
+            <select id="size">
+                <option>choose size</option>
+            </select>
+            <br>
+            <button onclick="coup()">add</button><button onclick="codown()">remove</button>
+            <br>
+            <span id="amount"></span>
+            
             <p>product description:</p>
             <p>Balanced and wholesome: with NAI petfoods, your wolf starts the new day optimally nourished. This tasty dry food is a real treat for your dog's bowl with the intense flavour of fresh meat.</p>
                 <p>It contains vitamin B,E,K and zinc. Vitamin E can support normal defences and the specially shaped kibble can make it easier to clean the teeth and thus contribute to oral hygiene.</p>
-            <input type="submit" class="buy" value="Purchase" onclick="alert('your purchase is comeplete')">
+            <input type="submit" class="buy" value="Purchase" onclick="purchase()">
         </div>
         </div>
     </div>
     </h>
-    <!--footer-->
-    
     </div>
+    </div>
+    <!--footer-->
+     <div class="footer container">
+        <img src="images/footer background.png" width="100%">
+        <div class="image_text_overlay"> 
+        <p>Web Technology subpage project by:</p>
+       <p>Adam Jezior - <a href="mailto:g00476267@atu.ie">g00476267@atu.ie</a></p>
+      <p>© 2025 NAI. All rights reserved.</p>
+  </div>
+
     
+    <script src="adam_sub.js"></script>
 </body>
 </html>
