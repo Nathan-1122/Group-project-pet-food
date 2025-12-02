@@ -23,7 +23,10 @@
             font-family:Arial, Helvetica, sans-serif;
             
         } 
-        
+        a{
+            text-decoration: none;
+
+        }
         a:hover{
             text-transform: capitalize;
             font-weight: bold;
@@ -42,12 +45,11 @@
         }
         
         .insight{
-            display: flex;
             justify-content: center;
             background-color: grey;
             width:100%;
             min-height:80px;
-            line-height:80px;
+            line-height:40px;
             margin-bottom:10px;
             text-align: center;
         }
@@ -92,7 +94,7 @@
             gap: 10px;
         }
         .container {
-            position: relative;
+            position:sticky;
             text-align: center;
             color: white;
         }
@@ -102,3 +104,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0; padding: 0;
+}
+.nav a { color: white;
+     text-decoration: none;
+     }
+
+.nav-toggle { display: none;
+     background: none;
+      border: none;
+       color: white;
+       font-size: 1.5rem; }
