@@ -24,6 +24,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 .logo { font-weight: bold;
@@ -118,18 +122,12 @@ body {
   padding: 20px;
 }
 
-/* Responsive nav */
-@media (max-width: 700px) {
-  .nav ul {
-     display: none;
-     flex-direction: column;
-      background: black;
-       padding: 10px;
-     }
-  .nav.open ul { 
-    display: flex;
- }
-  .nav-toggle { 
-    display: block;
- }
+.image_text_overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+li{
+  left: 40%;
 }
