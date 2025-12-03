@@ -15,10 +15,10 @@
         <div class="header" style="background-color: rgb(255, 142, 61) "; colspan="2">Sign Up</div>
 
         <div class="item">First Name</div>
-        <div id="fname"><input type="text" name="fname" id="fname" value="Enter First Name"></div>
+        <div><input type="text" name="fname" id="fname" value="Enter First Name"></div>
 
         <div class="item">Last Name</div>
-        <div id="lname"><input type="text" name="lname" id="lname" value="Enter Last Name"></div>
+        <div><input type="text" name="lname" id="lname" value="Enter Last Name"></div>
         
         <div class="item">Date of Birth</div>
         <div><select id="day" name="date" size="1">
@@ -83,7 +83,7 @@
         <div><input type="checkbox" id="terms"> I agree to the Terms of use</div>
 
         <div class="footer" style="background-color: rgb(255, 142, 61)";> 
-            <input class="footer submit" onclick="buy()" type="submit">
+            <input class="footer submit" onclick="buy(); createName()" type="submit">
             <button class="footer reset" onclick="cancel()">cancel</button>
         </div>
     </div>
