@@ -12,8 +12,13 @@ function sizes() {
         select.appendChild(valu);
     }
 }
-var first= document.getElementById("fname").value;
-var last= document.getElementById("lname").value;
+/*function createName(){
+   var first= document.getElementById("fname").value;
+    var last= document.getElementById("lname").value;
+    var name=first+last;
+    console.log(name);
+ 
+}*/
 function coup()
 {
     if(counter>=6){
@@ -41,10 +46,10 @@ function purchase()
 }
 
 function buy(){
-    alert("congratulations "+first+" "+last+ " on your purchasing NAI petfood's \"wolfy style dog food\"");
-    window.location.replace("adam.html");
+    alert("congratulations on your purchasing NAI petfood's \"wolfy style dog food\"");
+    window.location.replace("index.html");
 }
 
 function cancel(){
-  window.location.replace("adam.html");
+  window.location.replace("index.html");
 }
