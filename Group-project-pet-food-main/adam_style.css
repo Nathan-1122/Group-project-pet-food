@@ -109,3 +109,7 @@ body {
   margin-top: 40px;
   margin-right: 70px;
  }
+ #amount{
+  background-color: white;
+  border: 2px solid black;
+ }
