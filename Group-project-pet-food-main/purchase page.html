@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purchasing page</title>
+    <link rel="stylesheet" href="purchase_page.css">
+</head>
+<body>
+        <div class="container">
+        <img src="images/banner.png" width="100%">
+        <div class="image_text_overlay"><h1>NAI Pet food</h1></div>
+        </div>    
+    <div class="grid-container">
+        <div class="header" style="background-color: rgb(255, 142, 61) "; colspan="2">Sign Up</div>
+
+        <div class="item">First Name</div>
+        <div id="fname"><input type="text" name="fname" id="fname" value="Enter First Name"></div>
+
+        <div class="item">Last Name</div>
+        <div id="lname"><input type="text" name="lname" id="lname" value="Enter Last Name"></div>
+        
+        <div class="item">Date of Birth</div>
+        <div><select id="day" name="date" size="1">
+                <option value="day">Date</option>
+                <option value="day"> 1-8</option>
+                <option value="day"> 9-15</option>
+                <option value="day"> 16-20</option>
+                <option value="day"> 21-25</option>
+                <option value="day"> 26-30</option>
+                <option value="day"> 31</option></select>
+
+               <select id="month" name="month" size="1">
+                <option value="month">Month</option>
+                <option value="month"> January</option>
+                <option value="month"> Feburary</option>
+                <option value="month"> March</option>
+                <option value="month"> April</option>
+                <option value="month"> May</option></select>
+
+              <select id="year" name="year" size="1">
+                <option value="year">Year</option>
+                <option value="year"> 2000</option>
+                <option value="year"> 2001</option>
+                <option value="year"> 2002</option>
+                <option value="year"> 2003</option></select></div>
+        
+        <div class="item">Gender</div>
+        <div>
+            <form>
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <input type="radio" name="gender">
+            <label>Other</label>
+            </form>
+        </div>
+        
+        <div class="item">Country</div>
+        <div><select id="country" name="country" size="1">
+                <option value="select">select</option>
+                <option value="Ireland"> Ireland</option>
+                <option value="England"> England</option>
+                <option value="Poland"> Poland</option>
+                <option value="Gremany"> Germany</option></select></div>
+        
+        <div class="item">E-mail</div>
+        <div><input type="text" id="email" value="Enter E-mail"></div>
+        
+        <div class="item">Phone</div>
+        <div><input type="text" id="number" value="Enter Phone Number"></div>
+        
+        <div class="item">Password</div>
+        <div><input type="text" id="password"></div>
+        
+        <div class="item">Confirm Password</div>
+        <div><input type="text" id="passwordcon"></div>
+        <div class="item">Enter card number</div>
+        <div><input type="text" id="cardnum"></div>
+
+        <div class="item"> </div>
+        <div><input type="checkbox" id="terms"> I agree to the Terms of use</div>
+
+        <div class="footer" style="background-color: rgb(255, 142, 61)";> 
+            <input class="footer submit" onclick="buy()" type="submit">
+            <button class="footer reset" onclick="cancel()">cancel</button>
+        </div>
+    </div>
+
+     <div class="footertot container" id="contact">
+        <img src="images/footer background.png" width="100%">
+        <div class="image_text_overlay"> 
+        <p>Web Technology group project by:</p>
+        <p>Nathan Weir - <a href="mailto:G00484194@atu.ie">G00484194@atu.ie</a></p>
+        <p>Adam Jezior - <a href="mailto:g00476267@atu.ie">g00476267@atu.ie</a></p>
+        <p>Ivan Dolgopolioch</p>
+      <p>© 2025 NAI. All rights reserved.</p>
+  </div>
+    <script src="adam_sub.js"></script>
+</body>
+</html>

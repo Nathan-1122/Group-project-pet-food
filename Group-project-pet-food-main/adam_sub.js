@@ -1,4 +1,3 @@
-let amount = document.getElementById("wolfnum").value;
 let select = document.getElementById("size");
 let size=["small", "medium", "large", "Highly-Digestable small", "Highly-Digestable large"];
 var c=0;
@@ -12,39 +11,40 @@ function sizes() {
         valu.value = obj;
         select.appendChild(valu);
     }
-    
 }
+var first= document.getElementById("fname").value;
+var last= document.getElementById("lname").value;
 function coup()
 {
     if(counter>=6){
-        document.getElementsByClassName("amount").innerHTML="6";
+        document.getElementById("amount").innerHTML="Quantity 6";
     }
     else{
     ++counter;
-    document.getElementsByClassName("amount").innerHTML="quantity "+counter;
-    console.log(counter);
+    document.getElementById("amount").innerHTML="Quantity "+counter;
     }
 }
 function codown()
 {
     if(counter<=0){
-        document.getElementsByClassName("amount").innerHTML="0";
+        document.getElementById("amount").innerHTML="Quantity 0";
     }
     else{
     --counter;
-    document.getElementsByClassName("amount").innerHTML="quantity "+counter;
+    document.getElementById("amount").innerHTML="Quantity "+counter;
     }
 }
 
-
-
-
-
 function purchase()
 {
-   var  quantity=document.getElementById(wolfnum).value;
-   var q=parseInt(quantity);
-    var s=parseInt(size);
-   console.log(s);
-   console.log(q);
+  window.location.replace("purchase page.html");
+}
+
+function buy(){
+    alert("congratulations "+first+" "+last+ " on your purchasing NAI petfood's \"wolfy style dog food\"");
+    window.location.replace("adam.html");
+}
+
+function cancel(){
+  window.location.replace("adam.html");
 }
